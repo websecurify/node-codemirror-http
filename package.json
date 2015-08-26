@@ -1,6 +1,6 @@
 {
 	"name": "codemirror-http",
-	"version": "1.0",
+	"version": "1.0.0",
 	"description": "codemirror module for http request and response highlighting",
 	"keywords": ["codemirror-http", "codemirror", "share", "plugin"],
 	"author": "Websecurify <contact@websecurify.com> (http://www.websecurify.com)",
