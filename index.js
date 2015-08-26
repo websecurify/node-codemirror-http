@@ -780,20 +780,25 @@ HttpResponseTokenizer.prototype = {
 // ---
 // ---
 
-this.exports.install = function (CodeMirror) {
+exports.installHttpRequestMode = function (CodeMirror) {
 	CodeMirror.defineMode('httprequest', function(config) {
 		return new HttpRequestTokenizer(config, CodeMirror);
 	});
 	
 	CodeMirror.defineMIME('text/x-httprequest', 'httprequest');
-	
-	// ---
-	
+};
+
+exports.installHttpResponseMode = function (CodeMirror) {
 	CodeMirror.defineMode('httpresponse', function(config) {
 		return new HttpResponseTokenizer(config, CodeMirror);
 	});
 	
 	CodeMirror.defineMIME('text/x-httpresponse', 'httpresponse');
+};
+
+exports.install = function (CodeMirror) {
+	this.installHttpRequestMode(CodeMirror);
+	this.installHttpResponseMode(CodeMirror);
 };
 
 // ---
