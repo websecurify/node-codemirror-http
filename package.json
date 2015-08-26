@@ -1,0 +1,21 @@
+{
+	"name": "codemirror-http",
+	"version": "1.0",
+	"description": "codemirror module for http request and response highlighting",
+	"keywords": ["codemirror-http", "codemirror", "share", "plugin"],
+	"author": "Websecurify <contact@websecurify.com> (http://www.websecurify.com)",
+	"homepage": "https://github.com/websecurify/codemirror-http",
+	"repository": {
+	    "type": "git",
+	    "url": "https://github.com/websecurify/codemirror-http.git",
+	    "web": "https://github.com/websecurify/codemirror-http"
+	},
+    "bugs": {
+      "url": "http://github.com/websecurify/codemirror-http./issues/"
+    },
+	"main": "./index.js",
+    "licenses": [{
+      "type" : "MIT",
+      "url" : "https://github.com/websecurify/codemirror-http/LICENSE.md"
+    }]
+}
